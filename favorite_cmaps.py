@@ -38,7 +38,7 @@ green_purple_ramp = LinearSegmentedColormap.from_list("moreland_green_purple", [
 #Note that this will be problematic as is for individuals with red-green colorblindness 
 red_green_ramp = LinearSegmentedColormap.from_list("moreland_red-green", [(0.085, 0.532, 0.201), (0.865, 0.865, 0.865), (0.758, 0.214, 0.233)])
 #However, by changing the hue and value of the green and red, we can actually make a color ramp that should be readable for individuals with issues distinguishing these colors
-red_green_ramp_adj = LinearSegmentedColormap.from_list("adjusted_red-green", ['#2EF966', (0.865, 0.865, 0.865), '#9C090F'])
+red_green_ramp_adj = LinearSegmentedColormap.from_list("adjusted_red-green", ['#00FF46', (0.865, 0.865, 0.865), '#860835'])
 #More neutral colors in the ramp may get a little close for individuals with deuteranopia
 #It is also important to consider that even if all colors are distinguishable, if you are using red to indicate "bad" or "low" values, this ramp will still be hard to interpret at a glance
 

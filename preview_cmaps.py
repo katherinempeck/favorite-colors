@@ -59,7 +59,7 @@ plt.close()
 
 #My Gradients
 fig, ax = plt.subplots(len(my_cat), 1)
-for i, l, a in zip(my_cat, ['Historical Glass 1', 'Historic Glass 2'], ax.reshape(-1)):
+for i, l, a in zip(my_cat, ['Historical Glass 1', 'Historical Glass 2'], ax.reshape(-1)):
     show_cmap(l, i, a)
 plt.tight_layout()
 plt.savefig('figures/MyCategorical.jpg')
@@ -84,6 +84,6 @@ ax[1].set_xlabel('')
 ax[1].set_ylabel('Bill Length (mm)', fontsize = 12)
 fig.supxlabel('Flipper Length (mm)', fontsize = 12)
 plt.tight_layout()
-# plt.show()
 plt.savefig("figures/Scatter_example.jpg")
+plt.show()
 plt.close()

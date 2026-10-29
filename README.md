@@ -69,11 +69,15 @@ However, the green-purple map is similar to the ```PrGn``` and ```PiYG``` option
 
 <img src="figures/Gradient2.jpg" alt="Scatterplot example using a colormap" width="500">
 
-I did create the ```red_green_ramp_adj```. This mimics Moreland's red-green color ramp but with the values adjusted to be higher contrast. Red-green colorblindness is one of the common forms of colorblindness, and data visualization/mapping resources typically suggest avoiding it. However, adjusting the values of the red or green can still make the colors distinguishable from each other.
+I did create the ```red_green_ramp_adj```. This mimics Moreland's red-green color ramp but with the values adjusted. Red-green colorblindness is one of the common forms of colorblindness, and data visualization/mapping resources typically suggest avoiding it. However, using a very dark red and a very light green (i.e., changing the values) increases the contrast between the colors and makes them more distinguishable. Using a more pink/magenta-toned red can also help:
+
+<img src="figures/Red-green-simulation.png" alt="Dark red to light green color map simulation" width="350">
+
+This simulation from the [Coloring with Colorblindness](https://davidmathlogic.com/colorblind) website shows the adjusted red-green color map (left) and how it might appear for individuals with common forms of colorblindness (L to R: protanopia and deuteranopia, forms of red-green colorblindness, and tritanopia, which is blue-yellow colorblindness). However, if you are using red and green as a shorthand for low/high or bad/good then that meaning will not be as quickly conveyed for someone who cannot see these colors in the same way (even if the colors are distinguishable from each other).
 
 #### Categorical
 
-I found these color-blind friendly categorical color schemes, ```ibmcolorblind``` ([source](https://web.archive.org/web/20180503023309/https://www.ibm.com/design/language/resources/color-library)), ```okabe_ito``` ([source](https://jfly.uni-koeln.de/color/)), and ```tol_muted``` ([source](https://sronpersonalpages.nl/~pault/)) on the [Coloring with Colorblindness](https://davidmathlogic.com/colorblind) website originally.
+I found these color-blind friendly categorical color schemes, ```ibmcolorblind``` ([source](https://web.archive.org/web/20180503023309/https://www.ibm.com/design/language/resources/color-library)), ```okabe_ito``` ([source](https://jfly.uni-koeln.de/color/)), and ```tol_muted``` ([source](https://sronpersonalpages.nl/~pault/)) on [Coloring with Colorblindness](https://davidmathlogic.com/colorblind) originally.
 
 <img src="figures/Categorical.jpg" alt="Scatterplot example using a colormap" width="500">
 
